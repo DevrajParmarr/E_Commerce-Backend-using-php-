@@ -1,6 +1,8 @@
+Here's the README file content formatted and ready for you to paste:
+
 ---
 
-# E Commerce Website with Backend PHP 
+# E-Commerce Website with Backend in PHP
 
 ## Setup Instructions
 
@@ -47,10 +49,9 @@
 - **Ports in Use**: Ensure ports 80 (Apache) and 3306 (MySQL) are not in use by other applications.
 - **Database Configuration**: Verify that your database credentials in the config file are correct.
 
-
 ## Overview
 
-This project is a web application designed to manage e-commerce activities, including user management, product management, and order processing. The platform supports three types of users: Super Admin, Vendor, and Customer, each with specific functionalities.
+This project is a web application designed to manage e-commerce activities, including user management, product management, and order processing. The platform supports three types of users: **Super Admin**, **Vendor**, and **Customer**, each with specific functionalities.
 
 ## Features
 
@@ -99,4 +100,6 @@ This project is a web application designed to manage e-commerce activities, incl
 
 - **Place Order**: Finalize orders for products in the cart.
 
----
+--- 
+
+This structured format will help users understand how to set up and use your project efficiently.
