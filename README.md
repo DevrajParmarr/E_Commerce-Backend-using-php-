@@ -21,7 +21,7 @@ Here's the README file content formatted and ready for you to paste:
 3. **Set Up Project Files**:
    - Copy the project folder to the `htdocs` directory:
      ```
-     C:\xampp\htdocs\your_project_folder
+     C:\xampp\htdocs\E-COMMERCE-WEBSITE
      ```
 
 4. **Configure the Database**:
@@ -36,13 +36,13 @@ Here's the README file content formatted and ready for you to paste:
      $servername = "localhost";
      $username = "root";
      $password = "";
-     $dbname = "your_database_name";
+     $dbname = "acme";
      ```
 
 6. **Run the Project**:
    - Open your browser and navigate to:
      ```
-     http://localhost/your_project_folder/
+     http://localhost/E-COMMERCE-WEBSITE/
      ```
 
 ### Troubleshooting
