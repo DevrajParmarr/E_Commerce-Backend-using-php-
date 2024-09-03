@@ -1,6 +1,8 @@
 Description
 This project is an e-commerce platform developed with the guidance of Kalidas Sir from Acmegrade. The platform features multiple user roles, including Super Admin, Vendor, and Customer, each with specific functionalities. The system supports user authentication, product management, order processing, and cart management.
 
+To run this project ypou need to install XAMMPS ENVIROMENT and activate Apache server AND mYSQL SERVER .
+
 Features
 Super Admin
 Maintain Website: Basic maintenance and updates of the website.
