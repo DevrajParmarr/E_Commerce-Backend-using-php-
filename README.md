@@ -1,66 +1,102 @@
-Description
-This project is an e-commerce platform developed with the guidance of Kalidas Sir from Acmegrade. The platform features multiple user roles, including Super Admin, Vendor, and Customer, each with specific functionalities. The system supports user authentication, product management, order processing, and cart management.
+---
 
-To run this project ypou need to install XAMMPS ENVIROMENT and activate Apache server AND mYSQL SERVER .
+# E Commerce Website with Backend PHP 
 
-Features
-Super Admin
-Maintain Website: Basic maintenance and updates of the website.
-Release New Features/Updates: Manage the release of new features and updates.
-Manage Users: Manage user accounts and permissions.
-Vendor
-Authentication
+## Setup Instructions
 
-Signup
+### Prerequisites
+- **XAMPP**: Download and install from [XAMPP Official Website](https://www.apachefriends.org/index.html).
 
-UI: Includes fields for username, password, confirm password, and user type.
-   Process: Verifies if both passwords match; otherwise, throws an error.
-   API:
-      Reads user info.
-      Connects to the database.
-      Inserts user details into the database.
-  Database:
-     userid - INT, AUTO_INCREMENT
-     username - VARCHAR(20), UNIQUE
-     password - VARCHAR(100)
-     usertype - VARCHAR(15)
-     createddate - TIMESTAMP, default CURRENT_TIMESTAMP
-     active_status - BOOLEAN, default 1
+### Steps to Run the Project
 
-Login
+1. **Install XAMPP**:
+   - Download and install XAMPP on your system.
 
-   UI: Fields for username and password.
-   API:
-     Receives login credentials.
-     Connects to the database.
-     Checks for credential match in the database.
-     Logs in if credentials match; otherwise, login fails.
-     Database: Optional login activity logger.
+2. **Start Apache and MySQL Servers**:
+   - Open the XAMPP Control Panel.
+   - Click **Start** next to **Apache** and **MySQL**.
 
-Manage Products:
+3. **Set Up Project Files**:
+   - Copy the project folder to the `htdocs` directory:
+     ```
+     C:\xampp\htdocs\your_project_folder
+     ```
 
-    Add: Add new products.
-   View: View existing products.
-   Edit: Edit product details.
-   Delete: Remove products.
-  
-Manage Orders:
+4. **Configure the Database**:
+   - Open `http://localhost/phpmyadmin/` in your browser.
+   - Create a new database.
+   - Import the SQL file from the project folder.
 
-   View and manage orders.
-   View Analytics: Optional feature to view product and sales analytics.
+5. **Configure the Project**:
+   - Open the project’s configuration file (e.g., `config.php`).
+   - Update the database settings:
+     ```php
+     $servername = "localhost";
+     $username = "root";
+     $password = "";
+     $dbname = "your_database_name";
+     ```
 
-  Customer
-     Authentication:
+6. **Run the Project**:
+   - Open your browser and navigate to:
+     ```
+     http://localhost/your_project_folder/
+     ```
 
-     Signup and login functionality.
-     View Products: View available products.
-     
-Manage Cart
+### Troubleshooting
+- **Ports in Use**: Ensure ports 80 (Apache) and 3306 (MySQL) are not in use by other applications.
+- **Database Configuration**: Verify that your database credentials in the config file are correct.
 
-Add: Add products to the cart.
-View: View cart contents.
-Edit: Modify cart items.
-Delete: Remove items from the cart.
-Place Order:
 
-Place orders for products in the cart.
+## Overview
+
+This project is a web application designed to manage e-commerce activities, including user management, product management, and order processing. The platform supports three types of users: Super Admin, Vendor, and Customer, each with specific functionalities.
+
+## Features
+
+### Super Admin
+- **Maintain Website**: Perform basic maintenance and updates.
+- **Release New Features/Updates**: Manage the rollout of new features.
+- **Manage Users**: Oversee user accounts and permissions.
+
+### Vendor
+- **Authentication**:
+  - **Signup**:
+    - **UI**: Fields for username, password, confirm password, and user type.
+    - **Process**: Verifies password match; inserts user details into the database.
+    - **Database Schema**:
+      - `userid`: INT, AUTO_INCREMENT
+      - `username`: VARCHAR(20), UNIQUE
+      - `password`: VARCHAR(100)
+      - `usertype`: VARCHAR(15)
+      - `createddate`: TIMESTAMP, default CURRENT_TIMESTAMP
+      - `active_status`: BOOLEAN, default 1
+  - **Login**:
+    - **UI**: Fields for username and password.
+    - **Process**: Verifies credentials against the database.
+    - **Database**: Optional login activity logging.
+
+- **Manage Products**:
+  - **Add**: Introduce new products.
+  - **View**: Display existing products.
+  - **Edit**: Modify product details.
+  - **Delete**: Remove products from the catalog.
+
+- **Manage Orders**:
+  - **View and Manage**: Handle orders and monitor their status.
+  - **Analytics**: Optionally view product and sales analytics.
+
+### Customer
+- **Authentication**:
+  - **Signup and Login**: Register and access the platform.
+- **View Products**: Browse available products.
+
+- **Manage Cart**:
+  - **Add**: Include products in the cart.
+  - **View**: Review cart contents.
+  - **Edit**: Adjust items in the cart.
+  - **Delete**: Remove items from the cart.
+
+- **Place Order**: Finalize orders for products in the cart.
+
+---
