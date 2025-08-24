@@ -1,8 +1,14 @@
-
+<img width="1900" height="862" alt="Screenshot 2024-09-01 024602" src="https://github.com/user-attachments/assets/c51d1d4f-fedf-4cfd-b223-95be53fd809d" />
 
 ---
 
 # E-Commerce Website with Backend in PHP
+
+
+<img width="1916" height="904" alt="Screenshot 2024-09-01 024548" src="https://github.com/user-attachments/assets/710470f9-f864-44d3-9dc8-de4f48ac1529" />
+![Upl<img width="1917" height="863" alt="Screenshot 2024-09-01 024859" src="https://github.com/user-attachments/assets/6b8bae8c-13f5-4416-8128-c247586018e5" />
+oading Screenshot 2024-09-01 024602.png…]()
+<img width="1919" height="866" alt="Screenshot 2024-09-01 025006" src="https://github.com/user-attachments/assets/241901f6-6160-49d3-bb59-ea0aa89d7585" />
 
 ## Setup Instructions
 
